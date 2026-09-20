@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bauhaus-bg: #F0F0F0;
+  --color-bauhaus-fg: #121212;
+  --color-bauhaus-red: #D02020;
+  --color-bauhaus-blue: #1040C0;
+  --color-bauhaus-yellow: #F0C020;
+  --color-bauhaus-muted: #E0E0E0;
+
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: var(--color-bauhaus-bg);
+    --foreground: var(--color-bauhaus-fg);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .shadow-hard-sm {
+    box-shadow: 4px 4px 0px 0px #121212;
+  }
+  .shadow-hard-md {
+    box-shadow: 6px 6px 0px 0px #121212;
+  }
+  .shadow-hard-lg {
+    box-shadow: 8px 8px 0px 0px #121212;
+  }
+  
+  .active-press {
+    @apply active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all duration-75;
+  }
+}
