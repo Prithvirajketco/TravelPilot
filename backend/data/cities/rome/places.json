@@ -1,0 +1,73 @@
+[
+  {
+    "id": "rome_colosseum",
+    "name": "Colosseum",
+    "lat": 41.8902,
+    "lon": 12.4922,
+    "category": ["culture", "history"],
+    "tags": ["photogenic", "crowded"],
+    "avg_duration_min": 120,
+    "cost_per_person": 16.0,
+    "indoor": false,
+    "open_hours": [
+      {"dow": [1, 2, 3, 4, 5, 6, 7], "open": "09:00", "close": "16:30"}
+    ],
+    "closure_dates": ["2026-12-25", "2027-01-01"],
+    "best_time_of_day": "morning",
+    "booking_required": true,
+    "popularity_score": 0.95,
+    "source": {
+      "origin": "official_site",
+      "url": "https://parcocolosseo.it/",
+      "verified_by": "team",
+      "verified_on": "2026-09-19"
+    }
+  },
+  {
+    "id": "rome_trevi",
+    "name": "Trevi Fountain",
+    "lat": 41.9009,
+    "lon": 12.4833,
+    "category": ["culture", "architecture"],
+    "tags": ["photogenic", "crowded", "free"],
+    "avg_duration_min": 30,
+    "cost_per_person": 0.0,
+    "indoor": false,
+    "open_hours": [
+      {"dow": [1, 2, 3, 4, 5, 6, 7], "open": "00:00", "close": "23:59"}
+    ],
+    "closure_dates": [],
+    "best_time_of_day": "evening",
+    "booking_required": false,
+    "popularity_score": 0.90,
+    "source": {
+      "origin": "osm",
+      "verified_by": "team",
+      "verified_on": "2026-09-19"
+    }
+  },
+  {
+    "id": "rome_pizzeria_montecarlo",
+    "name": "Pizzeria La Montecarlo",
+    "lat": 41.8986,
+    "lon": 12.4704,
+    "category": ["food", "local_cuisine"],
+    "tags": ["pizza", "authentic"],
+    "avg_duration_min": 60,
+    "cost_per_person": 15.0,
+    "indoor": true,
+    "open_hours": [
+      {"dow": [1, 2, 3, 4, 5, 6, 7], "open": "12:00", "close": "15:00"},
+      {"dow": [1, 2, 3, 4, 5, 6, 7], "open": "18:30", "close": "23:30"}
+    ],
+    "closure_dates": [],
+    "best_time_of_day": "evening",
+    "booking_required": false,
+    "popularity_score": 0.85,
+    "source": {
+      "origin": "team_knowledge",
+      "verified_by": "team",
+      "verified_on": "2026-09-19"
+    }
+  }
+]
