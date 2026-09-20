@@ -14,6 +14,14 @@ interface Activity {
 }
 
 export default function Dashboard() {
+  return (
+    <React.Suspense fallback={<div>Loading Dashboard...</div>}>
+      <DashboardInner />
+    </React.Suspense>
+  );
+}
+
+function DashboardInner() {
   const searchParams = useSearchParams();
   const [mounted, setMounted] = useState(false);
   const [activeTab, setActiveTab] = useState('whatif');
